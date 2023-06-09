@@ -1,4 +1,4 @@
-# Realtor
+# Todo List
 
 A modern and lightweight todo list application.
 
