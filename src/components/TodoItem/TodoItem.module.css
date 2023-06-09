@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  margin: 10px 0em;
+  border-bottom: 1px solid #c2c2c2;
+  padding-bottom: 10px;
+  flex-direction: column;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+}
+
+.checked {
+  text-decoration: line-through;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+}
+
+.subtaskContainer {
+  margin-left: 2em;
+  display: flex;
+  cursor: pointer;
+}
+
+.subtask {
+  width: 20px;
+  height: 20px;
+}

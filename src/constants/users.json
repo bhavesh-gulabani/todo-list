@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John",
+      "email": "john@gmail.com",
+      "password": "John@123",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJqb2huQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiSm9obkAxMjMifQ.V_Z5K93SMr17QtZgKw0eOsgRofbHh8Q6zw51ouYkqsw"
+    },
+    {
+      "id": 2,
+      "name": "Jane",
+      "email": "jane@gmail.com",
+      "password": "Jane@123",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJqYW5lQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiSmFuZUAxMjMifQ.q0JXtx2_qMC0Es2zRrwLmlX1Su3BBX5X6VlzXQP-xyM"
+    }
+  ]
+}

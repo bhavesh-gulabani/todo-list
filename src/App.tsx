@@ -1,25 +1,51 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import {
+  RootLayout,
+  HomePage,
+  DashboardPage,
+  AuthenticationPage,
+  ErrorPage,
+} from './pages';
+import { action as authAction } from './pages/Authentication';
+import { action as logoutAction } from './pages/Logout';
+
+import { checkAuthLoader, tokenLoader } from './util/auth';
+
+import TodosContextProvider from './store/todos-context';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <RootLayout />,
+    errorElement: <ErrorPage />,
+    id: 'root',
+    loader: tokenLoader,
+    children: [
+      { index: true, element: <HomePage /> },
+      {
+        path: 'dashboard',
+        element: <DashboardPage />,
+        loader: checkAuthLoader,
+      },
+      {
+        path: 'login',
+        element: <AuthenticationPage />,
+        action: authAction,
+      },
+      {
+        path: 'logout',
+        action: logoutAction,
+      },
+    ],
+  },
+]);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <TodosContextProvider>
+      <RouterProvider router={router} />
+    </TodosContextProvider>
   );
 }
 

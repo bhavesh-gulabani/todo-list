@@ -1,0 +1,21 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4em;
+  background-color: #fcfcfc;
+  margin: auto;
+  margin-top: 4rem;
+  border-radius: 10px;
+  width: 50%;
+  left: auto;
+}
+
+.content img {
+  width: 200px;
+}
+
+.content p {
+  font-size: 1.5rem;
+  margin: 2rem 0;
+}

@@ -1,0 +1,67 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 36rem;
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: #fcfcfc;
+}
+
+.form h3 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: #2f3dd4;
+}
+
+.formControl {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.formControl label {
+  margin-right: 50px;
+  font-size: 1.1rem;
+}
+
+.formControl .emailLabel {
+  margin-right: 77px;
+}
+
+.formControl input {
+  padding: 10px;
+  font-size: 1.1rem;
+  background-color: #fff;
+  border: 1px solid #d5d6d7;
+}
+
+.actions {
+  margin-top: 1rem;
+}
+
+.actions button {
+  all: unset;
+  margin-top: 1em;
+  background-color: #2f3dd4;
+  color: #fff;
+  padding: 1em 3em;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.actions button:hover {
+  cursor: pointer;
+  background-color: #4351f1;
+}
+
+.error {
+  color: red;
+  margin: 1em 0 0 0;
+  border-bottom: 1px solid red;
+  padding-bottom: 6px;
+}
