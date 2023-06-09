@@ -29,3 +29,7 @@ A modern and lightweight todo list application.
 ![Image-5](./src/assets/project-screenshots/image-5.png)
 
 ![Image-6](./src/assets/project-screenshots/image-6.png)
+
+## Note
+
+- To login to the application, you can find the test credentials [here](./src/constants/users.json).
